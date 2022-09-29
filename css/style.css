@@ -1,0 +1,304 @@
+@import url('reset.css');
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+
+
+
+body {
+	font-family: "Lato";
+	font-weight: 400;
+	color: #424551;
+	font-size: 16px;
+	line-height: 25.6px;
+}
+
+[class*="__container"] {
+	max-width: 1230px;
+	margin: 0 auto;
+}
+
+.title,
+.cody {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 59.8px;
+	color: #1E212C;
+
+}
+
+.title {
+	margin-bottom: 40px;
+}
+
+.first-text {
+	margin-bottom: 48px;
+}
+
+.learn {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 48px;
+	margin-bottom: 24px;
+}
+
+.list li {
+	padding-left: 32px;
+	background: url("../img/image.jpg")0 6px no-repeat;
+}
+
+.list li:not(:last-child) {
+	margin-bottom: 4px;
+}
+
+.list {
+	margin-bottom: 184px;
+}
+
+.course {
+	font-weight: 700;
+	line-height: 24px;
+	color: #1E212C;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+
+.cody {
+	margin-bottom: 16px;
+}
+
+.senior {
+	font-size: 20px;
+	line-height: 30px;
+	color: #787A80;
+	margin-bottom: 32px;
+}
+
+.list-second {
+	padding-left: 24px;
+	margin-bottom: 32px;
+}
+
+.list-second li:not(:last-child) {
+	margin-bottom: 4px;
+}
+
+.list-second li::before {
+	font-weight: 700;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin-left: -24px;
+	margin-right: 8px;
+	margin-bottom: -2px;
+	content: "";
+}
+
+li.one::before {
+	background: url("../img/star.jpg")0 0px no-repeat;
+}
+
+li.two::before {
+	background: url("../img/play.jpg")0 0px no-repeat;
+}
+
+li.three::before {
+	background: url("../img/profile.jpg")0 0px no-repeat;
+}
+
+.text {
+	margin-bottom: 40px;
+}
+
+/* homework стилі будуть повторюватися(прошу сприймати як повну творчість,не пов'язану з попереднім блоком) */
+.homework {
+	font-size: 30px;
+	font-weight: 900;
+	color: cornflowerblue;
+	text-shadow: 10px 2px 20px black;
+	margin-bottom: 40px;
+}
+
+.title-one {
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+
+.title-two {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 59.8px;
+	margin-bottom: 50px;
+}
+
+.list-three li:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.list-three {
+	padding-left: 36px;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.list-three li::before {
+	background: url(" ../img/image.jpg")0 0 no-repeat;
+	content: "";
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin-right: 16px;
+	margin-left: -36px;
+	margin-bottom: -3px;
+}
+
+.title-three {
+	font-weight: 700;
+	text-align: center;
+	line-height: 24px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+
+
+.title-four {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 59.8px;
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: 60px;
+}
+
+.title-four::after {
+	content: "";
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	background: url("../img/students.jpg")0 0 no-repeat;
+	display: inline-block;
+}
+
+.text-one {
+	font-size: 20px;
+	line-height: 30px;
+	padding-left: 58px;
+	margin-bottom: 40px;
+}
+
+.text-one p::before {
+	background: url("../img/braces.jpg")0 0 no-repeat;
+	content: "";
+
+	height: 20px;
+	width: 28px;
+	display: inline-block;
+	margin-left: -58px;
+	margin-right: 30px;
+
+}
+
+.text-one p::after {
+	content: "";
+	background: url("../img/star.jpg")0 0 no-repeat;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+}
+
+.homework:hover {
+	background-color: cornflowerblue;
+	display: inline-block;
+	color: yellow;
+	text-decoration: underline;
+}
+
+.homework a:active {
+	color: crimson;
+	background-color: white;
+}
+
+a:visited {
+	color: darkgoldenrod;
+}
+
+a:focus {
+	outline: 2px solid brown;
+}
+
+.list-three {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.list-three li:nth-child(odd) {
+	text-transform: uppercase;
+}
+
+.list-three li:nth-child(even) {
+	color: brown;
+}
+
+.list-three li:last-child:hover {
+	color: darkgoldenrod;
+}
+
+.hover:hover .list-three {
+	visibility: visible;
+	opacity: 1;
+	background-color: burlywood;
+}
+
+.hover {
+	margin-bottom: 100px;
+}
+
+.text-one>p:not(:first-child) {
+	display: none;
+	background-color: coral;
+}
+
+.text-one p:first-child:hover~p {
+	display: block;
+}
+
+.text-one p:first-of-type {
+	text-transform: uppercase;
+}
+
+.text-one {
+	display: none;
+	margin-bottom: 100px;
+}
+
+.text-one:target {
+	display: block;
+}
